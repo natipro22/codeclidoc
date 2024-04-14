@@ -1,0 +1,11 @@
+---
+import "./option";
+// Access passed-in component props, like `<X title="Hello, World" />`
+const options: any[] | any = Astro.props;
+---
+| Option | Short | Description | Value Type | Default |
+| ------ | ----- | ----------- | ---------- | ------- |
+| `--abstract` | `-a` | abstract class | bool | false |
+| `--sealed` | `-s` | seald class | bool | false |
+| `--path` | `-p` | The path of the file. | string | |
+| `--help` | `-h` |  Shows help text. | bool | |
