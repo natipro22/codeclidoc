@@ -6,6 +6,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'CodeCLI Doc',
+			logo: { src:"./src/assets/codeCLI.png", alt: "CodeCLI Logo", replacesTitle: true},
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
@@ -21,19 +22,19 @@ export default defineConfig({
 					label: 'Commands',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Overview', link: '/commands/overview/' },
+						{ label: 'Overview', link: '/commands/generate/overview/' },
 						{ 
 							label: 'Generate',
 							items: [
-								{ label: 'Overview', link: '/commands/generate/' },
-								{ label: 'Class', link: '/commands/class/' },
-								{ label: 'Enum', link: '/commands/enum/' },
-								{ label: 'Interface', link: '/commands/interface/' },
-								{ label: 'Record', link: '/commands/record/' },
-								{ label: 'Controller', link: '/commands/controller/' },
-								{ label: 'Service', link: '/commands/service/' },
-								{ label: 'Minimal API', link: '/commands/minimal-api/' },
-								{ label: 'Endpoint', link: '/commands/endpoint/' },
+								{ label: 'Overview', link: '/commands/generate/generate' },
+								{ label: 'Class', link: '/commands/generate/class/' },
+								{ label: 'Enum', link: '/commands/generate/enum/' },
+								{ label: 'Interface', link: '/commands/generate/interface/' },
+								{ label: 'Record', link: '/commands/generate/record/' },
+								{ label: 'Controller', link: '/commands/generate/controller/' },
+								{ label: 'Service', link: '/commands/generate/service/' },
+								{ label: 'Minimal API', link: '/commands/generate/minimal-api/' },
+								{ label: 'Endpoint', link: '/commands/generate/endpoint/' },
 							]
 						},
 						{ 
